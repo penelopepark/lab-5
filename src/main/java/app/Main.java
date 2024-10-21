@@ -23,7 +23,8 @@ public class Main {
                                             .addChangePasswordUseCase()
                                             .addLoginOutCase()
                                             .build();
-
+        
+        appBuilder.getLogoutUseCase().logout();
         application.pack();
         application.setVisible(true);
     }
